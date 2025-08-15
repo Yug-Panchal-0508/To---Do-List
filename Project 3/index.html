@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>Simple To-Do List</h1>
+
+        <!-- Task input area -->
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Enter a new task...">
+            <input type="datetime-local" id="taskDate">
+            <select id="taskCategory">
+                <option value="Work">Work</option>
+                <option value="Personal">Personal</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Other">Other</option>
+            </select>
+            <button id="addTaskBtn">Add</button>
+        </div>
+
+        <!-- Search and sort -->
+        <div class="control-group">
+            <input type="text" id="searchInput" placeholder="Search tasks...">
+            <select id="sortTasks">
+                <option value="default">Sort by</option>
+                <option value="date">Due Date</option>
+                <option value="category">Category</option>
+            </select>
+            <button id="clearAllBtn">Clear All</button>
+        </div>
+
+        <!-- Task list -->
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
